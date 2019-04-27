@@ -1,0 +1,28 @@
+{
+    "game_modes": [
+        {
+            "player1": "Player",
+            "player2": "Computer",
+            "requires_inventory": true
+        },
+        {
+            "player1": "Computer",
+            "player2": "Computer",
+            "requires_inventory": false
+        }
+    ],
+    "inventory": [
+        {
+            "item_name": "Rock",
+            "icon": "hand-rock"
+        },
+        {
+            "item_name": "Paper",
+            "icon": "hand-paper"
+        },
+        {
+            "item_name": "Scissors",
+            "icon": "hand-scissors"
+        }
+    ]
+}
