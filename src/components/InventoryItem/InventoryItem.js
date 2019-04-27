@@ -6,10 +6,15 @@ import { faHandRock, faHandPaper, faHandScissors } from "@fortawesome/free-solid
 library.add(faHandRock, faHandPaper, faHandScissors);
 
 class InventoryItem extends Component {
+
+    handleClick() {
+        this.props.inventoryItemClickHandler(this.props.inventory_item)
+    }
+
     render() {
         return (
             // <button>{this.props.inventory_item.item_name}</button>
-            <button><FontAwesomeIcon size="10x" icon={this.props.inventory_item.icon} /></button>
+            <button onClick={this.handleClick.bind(this)}><FontAwesomeIcon size="10x" icon={this.props.inventory_item.icon} /></button>
         )
     }
 }
