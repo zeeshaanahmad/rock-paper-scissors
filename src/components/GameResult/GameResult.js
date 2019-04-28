@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class GameResult extends Component {
     render() {
         return(
-            <h1>{this.props.game_result.status + " becasue " + this.props.game_result.reason}</h1>
+            <h1>{this.props.game_result.status + " because " + this.props.game_result.reason}</h1>
         )
     }
 }
