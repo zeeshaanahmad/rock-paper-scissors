@@ -12,6 +12,19 @@ class BattleField extends Component {
         }
     }
 
+    componentDidMount() {
+        if (!this.props.game_mode.requires_inventory) {
+            // this.props.gameResultHandler(
+            //     this.compareMoves(
+            //         this.pickRandomInventoryItem(), 
+            //         this.pickRandomInventoryItem()
+            //     )
+            // )
+
+            this.handleInventoryItemClick(this.pickRandomInventoryItem())
+        }
+    }
+
     handleInventoryItemClick(inventory_item) {
         this.setState({
             seconds: 3
@@ -47,11 +60,11 @@ class BattleField extends Component {
         
         return (player2Item.item_name.toLowerCase() in this.props.game_rules[player1Item.item_name.toLowerCase()]
             ? {
-                "status": this.props.game_mode.player1 + " wins",
+                "status": this.props.game_mode.player1 + " WON",
                 "reason": this.props.game_rules[player1Item.item_name.toLowerCase()][player2Item.item_name.toLowerCase()]
             }
             : {
-                "status": this.props.game_mode.player1 + " lost",
+                "status": this.props.game_mode.player1 + " LOST",
                 "reason": this.props.game_rules[player2Item.item_name.toLowerCase()][player1Item.item_name.toLowerCase()]
             }            
         );

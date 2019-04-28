@@ -1,13 +1,13 @@
 {
     "game_modes": [
         {
-            "player1": "Human",
-            "player2": "Computer",
+            "player1": "You",
+            "player2": "Robot",
             "requires_inventory": true
         },
         {
-            "player1": "Computer",
-            "player2": "Computer",
+            "player1": "Robot 1",
+            "player2": "Robot 2",
             "requires_inventory": false
         }
     ],
