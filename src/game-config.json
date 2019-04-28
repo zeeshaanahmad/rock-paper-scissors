@@ -1,7 +1,7 @@
 {
     "game_modes": [
         {
-            "player1": "Player",
+            "player1": "Human",
             "player2": "Computer",
             "requires_inventory": true
         },
@@ -24,5 +24,16 @@
             "item_name": "Scissors",
             "icon": "hand-scissors"
         }
-    ]
+    ],
+    "rules": {
+        "rock": {
+            "scissors": "Rock crushes scissors"
+        },
+        "paper": {
+            "rock": "Paper covers rock"
+        },
+        "scissors": {
+            "paper": "Scissors cuts paper"
+        }
+    }
 }

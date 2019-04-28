@@ -30,6 +30,10 @@ class Game extends Component {
 		})
 	}
 
+	handleGameResult(game_result) {
+		this.setState(game_result)
+	}
+
 	render() {
 		return (
 			<div>
@@ -42,6 +46,8 @@ class Game extends Component {
 						game_mode={this.state.game_mode} 
 						gameQuitHandler={this.handleGameQuit.bind(this)}
 						inventory_items={gameConfig.inventory}
+						game_rules={gameConfig.rules}
+						gameResultHandler={this.handleGameResult.bind(this)}
 					/>}
 			</div>
 		)
