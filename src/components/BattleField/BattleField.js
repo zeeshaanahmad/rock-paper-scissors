@@ -38,7 +38,7 @@ class BattleField extends Component {
     }
 
     compareMoves(player1Item, player2Item) {
-        if (player1Item.item_name.toLowerCase() == player2Item.item_name.toLowerCase()) {
+        if (player1Item.item_name.toLowerCase() === player2Item.item_name.toLowerCase()) {
             return  {
                 "status": "It's a Tie",
                 "reason": "Both chose the same.  Try again!"
