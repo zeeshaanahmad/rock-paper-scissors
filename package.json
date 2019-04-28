@@ -39,7 +39,14 @@
   "devDependencies": {
     "axios": "^0.18.0",
     "axios-mock-adapter": "^1.16.0",
+    "babel-jest": "^24.7.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "enzyme-to-json": "^3.3.5",
     "jest": "^24.7.1",
     "react-testing-library": "^7.0.0"
+  },
+  "jest": {
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }

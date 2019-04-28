@@ -38,7 +38,7 @@ class Game extends Component {
 		return (
 			<div>
 				<h1>Rock, Paper, Scissors</h1>
-				<h1><FontAwesomeIcon icon="hand-rock" /> <FontAwesomeIcon icon="hand-paper" /> <FontAwesomeIcon icon="hand-scissors" /></h1>
+				{/* <h1><FontAwesomeIcon icon="hand-rock" /> <FontAwesomeIcon icon="hand-paper" /> <FontAwesomeIcon icon="hand-scissors" /></h1> */}
 
 				{!this.state.game_mode 
 					? <GameModes game_modes={gameConfig.game_modes} modeSelectionHandler={this.handleModeSelectionClick.bind(this)}/> 
