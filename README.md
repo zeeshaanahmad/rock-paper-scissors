@@ -14,8 +14,11 @@ yarn start
 ```
 
 # What's next?
-I tried to go test driven on this, but I am still learning Jest and Enzyme so that's something for future. 
-Layout also needs lots of improvement.
+* I tried to go test driven on this, but I am still learning Jest and Enzyme so that's something for future. 
+* Layout also needs lots of improvement.
+* Planning to build rest API for rock paper scissors so the configuration and computer move is generated from the server.
+ * For server side I'll most likely use Python Flask, SQLAlchemy.
+ * Node.Js can also be good option but I am more comfortable in Python Flask.
 
 # Notes:
 
