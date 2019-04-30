@@ -19,7 +19,7 @@ describe('Player', () => {
     });
     
     it('should show player name', ()=>{
-        let player = mountedPlayer.find('div').text()
+        let player = mountedPlayer.find('.card-title').text()
         expect(player).toBe(props.player_name);
     })
     

@@ -13,8 +13,11 @@ class InventoryItem extends Component {
 
     render() {
         return (
-            // <button>{this.props.inventory_item.item_name}</button>
-            <button onClick={this.handleClick.bind(this)}><FontAwesomeIcon size="10x" icon={this.props.inventory_item.icon} /></button>
+            <div className="col">
+                <button className="btn btn-default btn-lg" onClick={this.handleClick.bind(this)}>
+                    <FontAwesomeIcon icon={this.props.inventory_item.icon} size="3x"/>
+                </button>
+            </div>
         )
     }
 }

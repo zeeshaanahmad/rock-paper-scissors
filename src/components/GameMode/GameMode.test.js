@@ -25,11 +25,6 @@ describe('GameMode', () => {
     let mountedGameMode = shallow(<GameMode {...props}/>)
   });
 
-  it('should have li', () => {
-    const gameModeLi = mountedGameMode.find('li')
-    expect(gameModeLi.length).toBe(1);
-  });
-
   it('should have a button for mode selection', () => {
     const gameModeButton = mountedGameMode.find('button')
     expect(gameModeButton.length).toBe(1);

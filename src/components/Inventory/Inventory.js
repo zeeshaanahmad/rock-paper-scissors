@@ -9,7 +9,7 @@ class Inventory extends Component {
 
     render() {
         return (
-            <div>
+            <div className="row">
                 {
                     this.props.inventory_items.map((inventory_item, index) => {
                         return <InventoryItem key={index} inventory_item={inventory_item} inventoryItemClickHandler={this.handleInventoryItemClick.bind(this)}/>

@@ -9,13 +9,13 @@ class GameModes extends Component {
 
     render() {
         return(
-            <section>
-                <ul>
-                    {this.props.game_modes.map((game_mode, index) => {
-                        return <GameMode key={index} game_mode={game_mode} modeSelectionHandler={this.handleModeSelectionClick.bind(this)}/>
-                    })}
-                </ul>
-            </section>
+            <div className="row">
+                {this.props.game_modes.map((game_mode, index) => {
+                    return (<div key={index} className="col">
+                                <GameMode key={index} game_mode={game_mode} modeSelectionHandler={this.handleModeSelectionClick.bind(this)}/>
+                            </div>)
+                })}
+            </div>
         )
     }
 }
