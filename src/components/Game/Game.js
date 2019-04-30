@@ -4,8 +4,6 @@ import BattleGround from '../BattleGround/BattleGround.js'
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faHandRock, faHandPaper, faHandScissors } from "@fortawesome/free-solid-svg-icons";
 
-import './Game.css'
-
 library.add(faHandRock, faHandPaper, faHandScissors);
 
 let gameConfig = require('../../game-config.json')

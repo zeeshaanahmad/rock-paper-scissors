@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import GameMode from './GameMode';
+import { JestEnvironment } from '@jest/environment';
 
 describe('GameMode', () => {
 
@@ -33,6 +34,13 @@ describe('GameMode', () => {
   it('should have button with player names in the text e.g. player vs robot', ()=>{
     const gameModeButtonText = mountedGameMode.find('button').text()
     expect(gameModeButtonText).toBe(props.game_mode.player1 + " vs " + props.game_mode.player2);
+  })
+
+  it('calls a function when clicked', ()=>{
+      const mockCallBack = jest.fn()
+      const mountedGameModeWithCallback = shallow(<GameMode {...props} modeSelectionHandler={mockCallBack} />)
+      mountedGameModeWithCallback.find('button').simulate('click')
+      expect(mockCallBack.mock.calls.length).toEqual(1)
   })
 
 });

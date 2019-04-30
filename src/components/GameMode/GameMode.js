@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import './GameMode.css'
-
 class GameMode extends Component {
     handleClick() {
         this.props.modeSelectionHandler(this.props.game_mode)

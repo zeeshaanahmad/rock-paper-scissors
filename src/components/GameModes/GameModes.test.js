@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import GameModes from './GameModes';
 
 describe('GameModes', () => {
@@ -32,5 +32,12 @@ describe('GameModes', () => {
     const gameModes = mountedGameModes.find('GameMode')
     expect(gameModes.length).toBe(2);
   });
+
+  it('can recieve data from child',  ()=>{
+    const mockCallBackForGameModes = jest.fn()
+    const gameModes = mount(<GameModes {...props} modeSelectionHandler={mockCallBackForGameModes} />)
+    gameModes.find('GameMode').at(0).prop('modeSelectionHandler')({'test':'test'})
+    expect(mockCallBackForGameModes).toHaveBeenCalledWith({'test':'test'});
+  })
 
 });
