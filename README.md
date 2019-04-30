@@ -1,6 +1,6 @@
 # ROCK, PAPER, SCISSORS
 
-![](https://giphy.com/embed/fAKL57W9uSKwl69iC5)
+![](https://media.giphy.com/media/fAKL57W9uSKwl69iC5/giphy.gif)
 
 ## Description
 It is built using ReactJS and main idea was to demonstrate how you can use React to build front-end applications in a modular way. It uses very basic bootstrap for layout. The focus was more on modularity and functionality of the app.
