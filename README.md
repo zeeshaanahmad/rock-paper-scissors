@@ -1,5 +1,7 @@
 # ROCK, PAPER, SCISSORS
 
+![rps-scapture](http://www.giphy.com/gifs/fAKL57W9uSKwl69iC5)
+
 ## Description
 It is built using ReactJS and main idea was to demonstrate how you can use React to build front-end applications in a modular way. It uses very basic bootstrap for layout. The focus was more on modularity and functionality of the app.
 
